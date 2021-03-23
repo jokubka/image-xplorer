@@ -1,0 +1,28 @@
+.image-list {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+
+    .container {
+        width: 90%;
+        max-width: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        height: 300px;
+        flex: 1 0 auto;
+        margin: 15px;
+        object-fit: cover;
+        cursor: zoom-in;
+
+        &:last-child {
+            flex: 0 0 auto;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.search-history {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .search-query {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        border: 1px solid #ffffff;
+        border-radius: 15px;
+        cursor: pointer;
+
+        span {
+            color: #ffffff;
+            font-size: 11px;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+
+        span:first-child {
+            line-height: 0;
+            padding: 7px 0;
+        }
+
+        span:last-child {
+            font-size: 22px;
+            padding-left: 8px;
+        }
+
+        &:hover {
+            background-color: #ffffff;
+
+            span {
+                color: #000;
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
